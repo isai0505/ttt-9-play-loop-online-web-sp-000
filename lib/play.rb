@@ -36,3 +36,10 @@ def turn(board)
 end
 
 # Define your play method below
+
+def play(board)
+  until over?(board) == true || won?(board) != false
+    puts 'turn'
+      turn(board)
+    end
+end
